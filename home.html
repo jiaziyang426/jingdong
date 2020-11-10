@@ -1,11 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
+    <link rel="stylesheet" href="css/idem.css">
 </head>
+
+<link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
+
 <body>
-    aaaaa
+
+    <!--活动日志 -->
+    <div id="activity-top">
+        <div id="headerwatp">
+            <div><img src="//img14.360buyimg.com/img/jfs/t1/123924/1/16447/25668/5f9780e8Edbb615c8/120c0dfcba897a48.jpg.webp" alt=""></div>
+
+            <ul>
+                <li><img src="//img20.360buyimg.com/babel/jfs/t1/10797/1/6724/87409/5c24083cE09cb99d1/d2ea2265385befbe.jpg.webp" alt=""></li>
+                <li><img src="//img30.360buyimg.com/babel/jfs/t1/111016/14/13541/106109/5f1f9674Ed4f002e2/58b09f5a5f1c1835.jpg.webp" alt=""></li>
+                <li><img src="//img14.360buyimg.com/babel/jfs/t1/129805/9/14609/80390/5fa0b511E33b87252/78687cfec0119996.jpg.webp" alt=""></li>
+            </ul>
+            <div class="cha">×</div>
+        </div>
+    </div>
+    <!-- 捷径 -->
+    <div id="shortcut">
+        <div class="navwatp">
+
+            <a href="">📍 &nbsp;<span>河南</span> </a>
+            <ul class="fr">
+                <li class="login">
+                    <a href="" class="link-login">你好，请登陆</a>&nbsp;&nbsp;
+                    <a href="" class="link-regist">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                <li class="dt">
+                    <a href="">我的订单</a>
+                </li>
+                <li class="spacer"></li>
+                <!-- 我的京东 -->
+                <li class="dtl1">
+                    <a href="">我的京东∨</a>
+                    <ol class="wdjd">
+                        <div class="wdjd1">
+                            <div class="wdjd2">
+                                <li><a href="">待处理订单</a></li>
+                                <li><a href="">返修退换货</a></li>
+                                <li><a href="">降价商品</a></li>
+                            </div>
+                            <div class="wdjd3">
+                                <li><a href="">消息</a></li>
+                                <li><a href="">我的问答</a></li>
+                                <li><a href="">我的关注</a></li>
+                            </div>
+                        </div>
+                        <div class="wdjd1-2">
+                            <div class="wdjd1-3">
+                                <li><a href="">我的京东豆</a></li>
+                                <li><a href="">我的白条</a></li>
+                            </div>
+
+                            <div class="wdjd1-4">
+                                <li><a href="">我的优惠卷</a></li>
+                                <li><a href="">我的理财</a></li>
+                            </div>
+
+                        </div>
+                    </ol>
+                </li>
+                <li class="spacer"></li>
+
+                <!-- 京东会员 -->
+                <li class="dt">
+                    <a href="">京东会员</a>
+                </li>
+                <li class="spacer"></li>
+                <!-- 企业采购 -->
+                <li class="dtl">
+                    <a href="" id="cai">企业采购∨</a>
+                    <ol class="cai1">
+                        <li><a href="">企业购</a></li>
+                        <li><a href="">工业品</a></li>
+                        <li><a href="">礼品卡</a></li>
+                        <li><a href="">商用场景馆</a></li>
+                        <li><a href="">风客多商城</a></li>
+                        <li><a href="">微信企业购</a></li>
+                    </ol>
+                </li>
+                <li class="spacer"></li>
+                <!-- 客服服务 -->
+                <li class="kf">
+                    <a href="">客服服务∨</a>
+                    <!-- <ul class="kehu">
+                        <li><a href="">客服</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">在线客服</a></li>
+                        <li><a href="">电话客服</a></li>
+                        <li><a href="">金融资讯</a></li>
+                        <li><a href="">企业客服</a></li>
+                        <li><a href="">售后服务</a></li>
+                        <li><a href="">意见建议</a></li>
+                        <li><a href="">客服邮箱</a></li>
+                        <li><a href="">全球售客服</a></li>
+                        <li class="biaoti"><a href="">商户</a></li>
+                        <li><a href="">合作招商</a></li>
+                        <li><a href="">商家后台</a></li>
+                        <li><a href="">商家帮助</a></li>
+                        <li><a href="">成长中心</a></li>
+                        <li><a href="">京麦工作台</a></li>
+                        <li><a href="">规则工作台</a></li>
+                    </ul>
+ -->
+                </li>
+                <li class="spacer"></li>
+                <!-- 网址导航 -->
+                <li class="ddl">
+                    <a href="">网站导航∨</a>
+                </li>
+                <li class="spacer"></li>
+                <!-- 手机京东 -->
+                <li class="dt">
+                    <a href="">手机京东</a>
+                    <div class="img"></div>
+                </li>
+
+        </div>
+
+
+    </div>
+    <!-- 页头 -->
+    <div id="header">
+        <div class="header-w">
+            <h1 class="logo_tit">
+                <a href="//www.jd.com"><img src="//img10.360buyimg.com/img/jfs/t1/124600/14/15671/184916/5f8d7112E7f52db74/60ee6ba8e8e5ce3a.gif" alt=""></a>
+            </h1>
+            <div class="search-m">
+                <form action="">
+                    <label for="text"></label>
+                    <input type="text" name="" class="text" value="请输入查找的商品" onfocus="if(value=='请输入查找的商品') {value=''}" onblur="if (value=='') {value='请输入查找的商品'}">
+                    <button>🔍</button>
+                </form>
+                <div class="cw-icon">
+                    <i class="iconfont"></i>
+                    <a target="_blank" href="">我的购物车</a>
+                    <i class="ci-count" id="shopping-amount">0</i>
+                </div>
+                <ul id="hotwords">
+                    <a href="" class="style-red">享生活服务</a>
+                    <a href="">抢千元礼</a>
+                    <a href="">家庭狂欢</a>
+                    <a href="">耳机五折</a>
+                    <a href="">进口好物</a>
+                    <a href="">饰品三折</a>
+                    <a href="">玩具神券</a>
+                    <a href="">三星手机</a>
+                    <a href="">新一代Pc</a>
+                </ul>
+                <ul id="navitems">
+                    <li class="fore1"><a href="" style="color:red;font-weight: 700">秒杀</a> </li>
+                    <li class="fore1"><a href="" style="color:red;  font-weight: 700;">优惠券</a> </li>
+                    <li class="fore1"><a href="">PULUS会员</a> </li>
+                    <li class="fore1"><a href="">品牌闪购</a> </li>
+                    <li class="fore1"><a href="">拍卖</a> </li>
+                    <li class="fore1"><a href="">京东家电</a> </li>
+                    <li class="fore1"><a href="">京东超市</a> </li>
+                    <li class="fore1"><a href="">京东生鲜</a> </li>
+                    <li class="fore1"><a href="">京东国际</a> </li>
+                    <li class="fore1"><a href="">京东金融</a> </li>
+                </ul>
+            </div>
+            <div class="logo_tir">
+                <a href="//www.jd.com"><img src="https://img30.360buyimg.com/babel/jfs/t1/132571/32/14924/32216/5fa509a5Eb3059bdd/c97507884598cb61.png.webp" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 混合内容 -->
+    <div id="mod_container">
+        <div class="container_warp">
+            <div class="container1">
+                <ul class="cate1">
+                    <li> <a href="">家用电器 </a></li>
+                    <li> <a href="">手机</a><span>/</span><a href="">运营商</a><span>/</span><a href="">数码</a> </li>
+                    <li> <a href="">电脑</a><span>/</span><a href="">办公</a> </li>
+                    <li> <a href="">家居</a><span>/</span><a href="">家具</a><span>/</span>家装<span>/</span><a href="">厨具</a>
+                    </li>
+                    <li> <a href="">男装</a><span>/</span><a href="">女装</a><span>/</span><a href="">童装</a><span>/</span><a href="">内衣</a> </li>
+                    <li> <a href=""> 美妆</a><span>/</span><a href="">个护清洁</a><span>/</span><a href="">宠物</a></li>
+                    <li> <a href=""> 女鞋</a><span>/</span><a href="">箱包</a><span>/</span><a href="">钟表</a><span>/</span><a href="">珠宝</a></li>
+                    <li> <a href=""> 男鞋</a><span>/</span><a href="">运动</a><span>/</span><a href="">户外</a></li>
+                    <li><a href="">房产</a><span>/</span><a href="">汽车</a><span>/</span><a href="">车用品</a> </li>
+                    <li> <a href=""> 母婴</a><span>/</span><a href="">玩具乐器</a></li>
+                    <li> <a href="">食品</a><span>/</span><a href="">酒类</a><span>/</span><a href="">生鲜</a><span>/</span><a href="">特产 </a></li>
+                    <li> <a href=""> 艺术<span>/</span><a href="">礼品鲜花</a><span>/</span><a href="">农资绿植</a></li>
+                    <li> <a href=""> 医药保健</a><span>/</span><a href="">计生情趣</a></li>
+                    <li> <a href=""> 图书</a><span>/</span><a href="">文娱</a><span>/</span><a href="">教育</a><span>/</span><a href="">电子书</a></li>
+                    <li> <a href="">机票</a><span>/</span><a href="">酒店</a><span>/</span><a href="">旅游</a><span>/</span><a href="">生活 </a></li>
+                    <li>
+                        <a href="">理财</a><span>/</span><a href="">众筹</a><span>/</span><a href="">白条</a><span>/</span><a href="">保险</a></li>
+                    <li> <a href=""> 安装</a><span>/</span><a href="">维修</a><span>/</span><a href="">清洗</a><span>/</span>二手<br>
+                        <a href="">工业品</a>
+                    </li>
+                </ul>
+                <div class="heade" id="heade">
+                    <ul class="ul1">
+                        <li><a href="">家电11.11 ></a> </li>
+                        <li><a href="">家电馆></a></li>
+                        <li><a href="">家电专卖店></a></li>
+                        <li><a href="">家电服务></a></li>
+                        <li><a href="">企业采购></a></li>
+                        <li><a href="">商用电器></a></li>
+                        <li><a href="">商用电器></a></li>
+
+                    </ul>
+                    <div class="img">
+                        <img src="img/img2.png" alt="">
+                    </div>
+                    <div class="img1">
+                        <img src="img/img3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!------ 轮播1---- -->
+            <div class="swiper-container swiper-container1 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/img4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img6.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img7.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img8.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img9.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img10.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/img11.png" alt=""></div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <!-- 轮播图2 -->
+            <div class="container3">
+
+            </div>
+            <!-- 内容4/ -->
+            <div class="container4">
+                <div class="new1">
+                    <div class="nwe-a">
+                        <img src="img/jingdong.png" alt="">
+                        <div class="tip">
+                            <a href=""> Hi~欢迎逛京东！</a>
+                            <p>
+                                <a href="">登陆</a>
+                                <span>|</span>
+                                <a href="">注册</a>
+                            </p>
+                        </div>
+                        <div class="tip1">
+                            <a href="">新人福利</a>
+                        </div>
+                        <div class="tip2"><a href="">PLUS会员</a> </div>
+                    </div>
+
+                    <div class="nwe-b"></div>
+                </div>
+                <div class="xian"></div>
+                <div class="new2">
+                    <div class="new-hd">
+                        <h5> <a href="">京东快报</a></h5>
+                        <div><a href="">更多 ></a></div>
+                    </div>
+
+                    <ul class="list">
+                        <li class="news_item news_item__recommend"><a href="//kuaibao.jd.com/article?id=1616767" target="_blank" class="news_link" clstag="h|keycount|head|news_b01"><span
+                                    class="news_tag">热门</span>潮流不贵，月薪3000也能穿得时髦体面！</a></li>
+                        <li class="news_item news_item__recommend"><a href="//kuaibao.jd.com/article?id=627974" target="_blank" class="news_link" clstag="h|keycount|head|news_b02"><span
+                                    class="news_tag">热门</span>余文乐的联名匡威，和陈冠希的太极有点像</a></li>
+                        <li class="news_item news_item__recommend"><a href="//kuaibao.jd.com/article?id=567166" target="_blank" class="news_link" clstag="h|keycount|head|news_b03"><span
+                                    class="news_tag">热议</span>口碑销量，为什么罗技做的这么好？</a></li>
+                        <li class="news_item news_item__recommend"><a href="//kuaibao.jd.com/article?id=836177" target="_blank" class="news_link" clstag="h|keycount|head|news_b04"><span
+                                    class="news_tag">热门</span>细节满分的空军一号，经典口号再次唤醒</a></li>
+                    </ul>
+                    <ul class="J_tab_head service_list">
+                        <li class="service_item service_frame mod_tab_head_item">
+                            <a href="//chongzhi.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_01" aria-label="话费">
+                                <i class="service_ico service_ico_huafei">
+                                    <img class="service_ico_img"
+                                        src="//m.360buyimg.com/babel/jfs/t1/30057/19/14881/720/5cbf064aE187b8361/eed6f6cbf1de3aaa.png">
+                                    <img class="service_ico_img_hover"
+                                        src="//m.360buyimg.com/babel/jfs/t1/45423/33/385/778/5cd4f265E442a9342/0aff0a42cece09ee.png">
+                                </i>
+                                <span class="service_txt">话费</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_frame mod_tab_head_item service_frame_on">
+                            <a href="//jipiao.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_02" aria-label="机票">
+                                <span class="service_corner">
+                                    <i class="service_corner_txt">热</i>
+                                    <i class="service_corner_ico"></i>
+                                </span>
+                                <i class="service_ico service_ico_jipiao">
+                                    <img class="service_ico_img"
+                                        src="//m.360buyimg.com/babel/jfs/t1/36478/38/5384/2901/5cbf065aEb0c60a12/afb4399323fe3b76.png">
+                                    <img class="service_ico_img_hover"
+                                        src="//m.360buyimg.com/babel/jfs/t1/34261/15/10242/3120/5cd4f256E10257aba/8f3f63ae04ff19af.png">
+                                </i>
+                                <span class="service_txt">机票</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_frame mod_tab_head_item">
+                            <a href="//hotel.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_03" aria-label="酒店">
+                                <i class="service_ico service_ico_jiudian">
+                                    <img class="service_ico_img"
+                                        src="//m.360buyimg.com/babel/jfs/t1/31069/34/14642/979/5cbf0665Ec7dc8223/5fee386254dd2ebc.png">
+                                    <img class="service_ico_img_hover"
+                                        src="//m.360buyimg.com/babel/jfs/t1/44601/19/915/1039/5cd4f1cfE2e46473c/b61f083872a7a1de.png">
+                                </i>
+                                <span class="service_txt">酒店</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_frame service_frame2 mod_tab_head_item" data-row="2">
+                            <a href="//game.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_04" aria-label="游戏">
+                                <i class="service_ico service_ico_youxi">
+                                    <img class="service_ico_img"
+                                        src="//m.360buyimg.com/babel/jfs/t1/32403/22/14829/3699/5cbf0674E04723693/caa83ce9b881cd24.png">
+                                    <img class="service_ico_img_hover"
+                                        src="//m.360buyimg.com/babel/jfs/t1/57520/8/375/4092/5cd4f1d8Ea1266047/1c590322ece537ba.png">
+                                </i>
+                                <span class="service_txt">游戏</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://jiayouka.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_05" aria-label="加油卡">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/71890/14/9897/3048/5d7739ddE93eb94f8/f1f6dc5c207329f9.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/36002/35/9106/3311/5cd4f1bdE06ff07ed/9570fdd46ecd3a76.png">
+                                </i>
+                                <span class="service_txt">加油卡</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://train.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_06" aria-label="火车票">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/45761/32/10307/1581/5d7739e2Ece4b6671/0004c1b85fbf7bde.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/58891/36/278/1745/5cd4f1e0Ef4cc50a7/f12276b17e5dcf3b.png">
+                                </i>
+                                <span class="service_txt">火车票</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://z.jd.com/sceneIndex.html?from=jrscyn_20162" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_07" aria-label="众筹">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/51584/31/10221/1685/5d7739e7E1adb25cd/1d0957d7f2ae01a2.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/50929/1/374/1847/5cd4f1eaE5daf90db/cebbff76b25dc22e.png">
+                                </i>
+                                <span class="service_txt">众筹</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://licai.jd.com/?from=jrscyn_20161" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_08" aria-label="理财">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/52683/35/10394/3447/5d7739edE270aa7b3/d4d1151b09b5553b.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/47544/23/372/3943/5cd4f24eE92fbcf79/4b49b55af25a7bdf.png">
+                                </i>
+                                <span class="service_txt">理财</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://baitiao.jd.com/?from=jrscyn_20160" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_09" aria-label="白条">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/56296/3/10260/1443/5d7739f3E233abc53/e6976f3cb30c9a8a.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/39983/24/6834/1596/5cd4f247E8cf89f1e/b8a8418d5418f471.png">
+                                </i>
+                                <span class="service_txt">白条</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://movie.jd.com/index.html" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_10" aria-label="电影票">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/60778/37/9838/3066/5d7739faEd3b7dbb9/dd4d9ef7ce8fc169.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/41106/15/4551/3300/5cd4f1c7E507148c7/90a218f053e903d2.png">
+                                </i>
+                                <span class="service_txt">电影票</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://b.jd.com/" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_11" aria-label="企业购">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/40738/20/14562/826/5d773a01E09eb8121/d6f3909618c6307a.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/45316/3/388/884/5cd4f25eEea4c67ed/671f7c186c5e9b01.png">
+                                </i>
+                                <span class="service_txt">企业购</span>
+                            </a>
+                        </li>
+                        <li class="service_item service_noframe">
+                            <a href="https://o.jd.com/market/index.action" class="service_lk" target="_blank" clstag="h|keycount|head|shortcut_12" aria-label="礼品卡">
+                                <i class="service_ico">
+                                    <!-- 常态 icon -->
+                                    <img class="service_ico_img"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/57014/6/10297/815/5d773a07Ec7a61fc9/97917a2daa34be0f.png">
+                                    <!-- hover 态 icon -->
+                                    <img class="service_ico_img_hover"
+                                        src="https://m.360buyimg.com/babel/jfs/t1/55911/31/402/858/5cd4f23eE6f536460/5da079255c6dfabe.png">
+                                </i>
+                                <span class="service_txt">礼品卡</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="new3"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 秒杀 -->
+    <div id="seckill">
+        <div class="seckill-w">
+            <!-- 秒杀记时器 -->
+            <div class="box1">
+                <p>京东秒杀</p>
+
+                <div class="shijian">
+                    14:00 点场到计时
+                </div>
+                <div class="jishikuang">
+                    <div>
+                        <span></span>
+
+                        <span></span>
+
+                        <span></span>
+                    </div>
+                </div>
+                <script>
+                    var date = new Date(2020, 10, 31, 20, 0, 0)
+                    console.log(date)
+                    var spans = document.querySelectorAll(".jishikuang span");
+                    console.log(spans)
+                    let timer = setInterval(() => {
+                        let dDate = date - new Date()
+                        let seconds = parseInt(dDate / 1000)
+                        if (seconds % 60 < 10) {
+                            spans[2].innerHTML = '0' + seconds % 60
+                        } else {
+                            spans[2].innerHTML = seconds % 60
+                        }
+                        let minutes = parseInt(seconds / 60) % 60
+                        if (minutes < 10) {
+                            spans[1].innerHTML = '0' + minutes
+                        } else {
+                            spans[1].innerHTML = minutes
+                        }
+                        let hours = parseInt(seconds / 3600) % 60
+                        if (hours < 10) {
+                            spans[0].innerHTML = '0' + hours
+                        } else {
+                            spans[0].innerHTML = hours
+                        }
+                    }, 1000)
+                </script>
+            </div>
+            <!-- 轮播 3 -->
+            <div class="box2">
+                <div class="swiper-container swiper-container2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/a.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/b.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/c.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/d.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/e.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/f.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/g.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/h.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/r.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/j.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/h.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/a.png" alt="">
+                            <p>男士手表 </p>
+                            <p class="a">￥999</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播4 -->
+            <div class="box3">
+                <div class="swiper-container swiper-container3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/下载1.png" alt="">
+                            <p>大自然秒杀专场 </p>
+                            <p class="a">￥9969</p>
+                        </div>
+                        <div class="swiper-slide" style="margin-left:2px;">
+                            <img src="img/下载2.png" alt="">
+                            <p>大自然秒杀专场 </p>
+                            <p class="a">￥9969</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活动下面 包装 -->
+    <div id="activity-floor_wrappr">
+        <div class="dakuang">
+            <div class="dakuang-a">
+                <ul class="activity-floor">
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <img src="img/生活服务.png" alt="">
+                            </div>
+                            <span>
+                                <img src="img/生活服务1.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="activity-right">
+
+                    <li>
+                        <a href=""><img src="//img30.360buyimg.com/babel/s380x200_jfs/t1/123247/33/17336/3739/5fa2afe0Ea53b13d1/e0c0f09485dfd3cf.png!cc_190x100.webp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="//img30.360buyimg.com/babel/s380x200_jfs/t1/123247/33/17336/3739/5fa2afe0Ea53b13d1/e0c0f09485dfd3cf.png!cc_190x100.webp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="//img30.360buyimg.com/babel/s380x200_jfs/t1/123247/33/17336/3739/5fa2afe0Ea53b13d1/e0c0f09485dfd3cf.png!cc_190x100.webp" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="//img30.360buyimg.com/babel/s380x200_jfs/t1/123247/33/17336/3739/5fa2afe0Ea53b13d1/e0c0f09485dfd3cf.png!cc_190x100.webp" alt=""></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- 、为你推荐 -->
+    <div id="wei">
+        <div class="floor-hd">
+            <h1>为你推荐</h1>
+        </div>
+    </div>
+    <div id="floor-hd"></div>
 </body>
+<script src="https://www.swiper.com.cn/package/swiper-bundle.min.js"></script>
+
+<script>
+    // 轮播1
+    var swiper = new Swiper('.swiper-container1 ', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        autoplay: {
+            delay: 1000
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    // 轮播3
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 4,
+        // spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        autoplay: {
+            delay: 2000
+        },
+
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    //轮播4
+    var swiper = new Swiper('.swiper-container3', {
+        spaceBetween: 30,
+        centeredSlides: true,
+
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 </html>
