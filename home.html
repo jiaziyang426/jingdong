@@ -9,9 +9,49 @@
 </head>
 
 <link rel="stylesheet" href="https://www.swiper.com.cn/package/swiper-bundle.min.css">
+<script src="js/jquery-1.11.0.js"></script>
 
 <body>
-
+    <!-- 头部 -->
+    <div id="search-top1">
+        <div id="search-top">
+            <img src="img/gdnav.png" alt="">
+        </div>
+    </div>
+    <div id="search-top2">
+        <img src="img/35.png" alt="">
+    </div>
+    <div id="search-top3">
+        <img src="img/gdnav2.png" alt="">
+    </div>
+    <script>
+        console.log($(window).scrollTop());
+        let flag = true;
+        $(window).scroll(function() {
+            if (flag) {
+                if ($(window).scrollTop() >= 300) {
+                    $('#search-top1').css({
+                        "display": "block"
+                    })
+                } else {
+                    $('#search-top1').css({
+                        "display": "none"
+                    })
+                }
+            }
+        })
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 1700) {
+                $("#search-top3").css({
+                    "display": "block"
+                })
+            } else {
+                $("#search-top3").css({
+                    "display": "none"
+                })
+            }
+        })
+    </script>
     <!--活动日志 -->
     <div id="activity-top">
         <div id="headerwatp">
@@ -33,7 +73,7 @@
             <ul class="fr">
                 <li class="login">
                     <a href="" class="link-login">你好，请登陆</a>&nbsp;&nbsp;
-                    <a href="" class="link-regist">免费注册</a>
+                    <a href="zhuce.html" class="link-regist">免费注册</a>
                 </li>
                 <li class="spacer"></li>
                 <li class="dt">
@@ -144,7 +184,7 @@
                 </form>
                 <div class="cw-icon">
                     <i class="iconfont"></i>
-                    <a target="_blank" href="">我的购物车</a>
+                    <a target="_blank" href="cart.html">我的购物车</a>
                     <i class="ci-count" id="shopping-amount">0</i>
                 </div>
                 <ul id="hotwords">
@@ -224,24 +264,27 @@
                 </div>
 
             </div>
-            <!------ 轮播1---- -->
-            <div class="swiper-container swiper-container1 ">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/img4.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img5.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img6.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img7.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img8.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img9.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img10.png" alt=""></div>
-                    <div class="swiper-slide"><img src="img/img11.png" alt=""></div>
 
+            <!------ 轮播1---- -->
+            <div class="lunbo1">
+                <div class="swiper-container swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/img4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img7.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img8.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img9.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img10.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img11.png" alt=""></div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-white"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
             <!-- 轮播图2 -->
             <div class="container3">
@@ -255,9 +298,9 @@
                         <div class="tip">
                             <a href=""> Hi~欢迎逛京东！</a>
                             <p>
-                                <a href="">登陆</a>
+                                <a href="denglu.html">登陆</a>
                                 <span>|</span>
-                                <a href="">注册</a>
+                                <a href="zhuce.html">注册</a>
                             </p>
                         </div>
                         <div class="tip1">
@@ -445,7 +488,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- 秒杀 -->
     <div id="seckill">
@@ -494,9 +537,9 @@
                     }, 1000)
                 </script>
             </div>
-            <!-- 轮播 3 -->
-            <div class="box2">
-                <div class="swiper-container swiper-container2">
+            <!-- 轮播 3333333333333333333333333333333 -->
+            <div class="lunbo3">
+                <div class="swiper-container swiper-container3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="img/a.png" alt="">
@@ -562,9 +605,9 @@
                     </div>
                 </div>
             </div>
-            <!-- 轮播4 -->
-            <div class="box3">
-                <div class="swiper-container swiper-container3">
+            <!-- ---轮播4444444444444444444444444 -->
+            <div class="lunbo4">
+                <div class="swiper-container swiper-container4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="img/下载1.png" alt="">
@@ -712,66 +755,125 @@
         <div class="floor-hd">
             <h1>为你推荐</h1>
         </div>
+        <div class="wei-w">
+            <!-- 为你推荐导航 -->
+            <ul class="header-to">
+                <li>
+                    <a href="">
+                        <span style="background: #E1251B;width: 80px;height: 27px;border-radius: 28px;display: block;color: white;font-weight: 700;text-align: center;line-height: 27px;
+                        margin-left:50px ;margin-bottom: 0;"> 精选</span>
+                        <p style="width: 80px;height: 27px;border-radius: 28px;display: block;color:red;font-weight: 500;text-align: center; margin-left:50px ">猜你喜欢</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=" ">
+                        <span> 智能先锋</span>
+                        <p>大电器城</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=" ">
+                        <span> 居家优品</span>
+                        <p>品质生活</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=" ">
+                        <span> 超市百货</span>
+                        <p>百货生鲜</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=" ">
+                        <span> 时尚达人</span>
+                        <p>美妆穿搭</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=" ">
+                        <span> 进口好物</span>
+                        <p>京东国际</p>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- 列表详情 -->
+        <ul class="liebiao">
+            <!-- <li>
+                <a href="">
+                    <img src="img/口红.jpg" alt="">
+                    <span>迪奥(Dior)口红999烈艳蓝金唇膏888口红套装送女友生日..….</span>
+                    <b>￥999.99</b>
+                </a>
+            </li>-->
+        </ul>
     </div>
-    <div id="floor-hd"></div>
+    </div>
+    <div id="floor">
+        <div class="floor-w">
+            <img src="img/广告11.png" alt="">
+        </div>
+    </div>
+
+
 </body>
-<script src="https://www.swiper.com.cn/package/swiper-bundle.min.js"></script>
+<script src="js/home.js"></script>
+<script src="https://www.swiper.com.cn/package/swiper-bundle.min.js "></script>
 
 <script>
-    // 轮播1
-    var swiper = new Swiper('.swiper-container1 ', {
+    // 轮播1-11111111111111111111111111111111
+    var swiper1 = new Swiper('.swiper-container1', {
         spaceBetween: 30,
         effect: 'fade',
         loop: true,
         autoplay: {
-            delay: 1000
+            delay: 3000
         },
-
         pagination: {
-            el: '.swiper-pagination',
+            el: '.lunbo1 .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.lunbo1 .swiper-button-next',
+            prevEl: '.lunbo1 .swiper-button-prev',
         },
     });
-    // 轮播3
-    var swiper = new Swiper('.swiper-container2', {
+    // 轮播3----------333333333333333333333333333333
+    var swiper2 = new Swiper('.swiper-container3', {
         slidesPerView: 4,
         // spaceBetween: 30,
         slidesPerGroup: 4,
-        loop: true,
+        // loop: true,
         autoplay: {
             delay: 2000
         },
 
         loopFillGroupWithBlank: true,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.lunbo3 .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.lunbo3 .swiper-button-next',
+            prevEl: '.lunbo3 .swiper-button-prev',
         },
     });
-    //轮播4
-    var swiper = new Swiper('.swiper-container3', {
-        spaceBetween: 30,
+    //轮播44444444------------
+    var swiper4 = new Swiper('.swiper-container4', {
         centeredSlides: true,
-
         autoplay: {
-            delay: 2000,
+            delay: 1000,
             disableOnInteraction: false,
         },
         pagination: {
-            el: '.swiper-pagination',
+            el: '.lunbo4 .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.lunbo4 .swiper-button-next',
+            prevEl: '.lunbo4 .swiper-button-prev',
         },
     });
 </script>

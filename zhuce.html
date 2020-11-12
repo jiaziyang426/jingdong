@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<!-- <link rel="stylesheet" href="denglu.html"> -->
+<link rel="stylesheet" href="css/zhuce.css">
+
+<body>
+    <div class="jindong">
+        <img src="img/jingdong1.png" alt="">
+    </div>
+
+    <a href="denglu.html">
+        <div class="yi"> </div>
+    </a>
+
+
+    <div id="login">
+        <h1>注册</h1>
+
+        <input type="text" placeholder="用户名" id="u"></input>
+        <input type="password" placeholder="密码" id="p"></input>
+        <button id="but">注册</button>
+
+    </div>
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+        $("#but").click(function() {
+            var username = $("#u").val();
+            var password = $("#p").val();
+            console.log(username, password);
+
+            $.get("http://jx.xuzhixiang.top/ap/api/reg.php", {
+                username,
+                password
+
+            }).then(foo => {
+                console.log(foo.code);
+                if (foo.code == 1) {
+                    window.location.href = "denglu.html"
+                } else {
+                    alert("用户名重复");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
