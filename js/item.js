@@ -24,9 +24,10 @@ $.ajax({
 
 //点击添加商品 给用户购物车中添加商品 
 let uid = localStorage.getItem("a");
-let pnum = $('.ipt').val();
+
 let pid = arr1[1];
 $(".btn").click(function() {
+    let pnum = $('.ipt').val();
     $.ajax({
         type: "get",
         url: "http://jx.xuzhixiang.top/ap/api/add-product.php",
